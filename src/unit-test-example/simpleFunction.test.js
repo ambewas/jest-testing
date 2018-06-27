@@ -48,16 +48,16 @@ describe('forEach', function () {
 |--------------------------------------------------
 */
 
-// testing objects / classes
-describe('calculator', () => {
-  it('should have an add method', () => {
-    expect(calculator.add).toBeDefined();
-  });
-  describe('add', () => {
-    it('should add two numbers together', () => {
-      expect(calculator.add(1, 3)).toEqual(4);
-    });
-  })
-});
+// // testing objects / classes
+// describe('calculator', () => {
+//   it('should have an add method', () => {
+//     expect(calculator.add).toBeDefined();
+//   });
+//   describe('add', () => {
+//     it('should add two numbers together', () => {
+//       expect(calculator.add(1, 3)).toEqual(4);
+//     });
+//   })
+// });
 
 
