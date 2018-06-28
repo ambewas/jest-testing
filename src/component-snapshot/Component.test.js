@@ -13,6 +13,12 @@ describe('Component', function () {
     expect(wrapper).toMatchSnapshot();
   })
 
+  it('should render a counter inside a div with classname child', () => {
+    const child = wrapper.find('.child');
+
+    expect(child).toBeDefined();
+  })
+
   it('should increase a counter in state', () => {
     wrapper.find('.toggle').simulate('click');
     expect(wrapper.state().counter).toEqual(1)

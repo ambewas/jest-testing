@@ -9,7 +9,23 @@ class MyComponent extends Component {
   }
   render() {
     return (
-      <div className='toggle' onClick={() => this.setState({ counter: this.state.counter + 1 })}>{this.state.counter}{this.props.children}</div>
+      <div
+        className='toggle'
+        onClick={() => this.setState({ counter: this.state.counter + 1 })}
+        style={{
+          fontSize: 70,
+          height: '100vh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          userSelect: 'none',
+          cursor: 'pointer',
+          fontFamily: 'sans-serif'
+        }}
+      >
+        <div className="child">{this.state.counter}</div>
+        {this.props.children}
+      </div>
     );
   }
 }
