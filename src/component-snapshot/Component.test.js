@@ -22,6 +22,11 @@ describe('Component', function () {
   it('should increase a counter in state', () => {
     wrapper.find('.toggle').simulate('click');
     expect(wrapper.state().counter).toEqual(1)
+
+    wrapper.find('.toggle').simulate('click');
+    wrapper.find('.toggle').simulate('click');
+    expect(wrapper.state().counter).toEqual(3)
+
   })
 })
 
