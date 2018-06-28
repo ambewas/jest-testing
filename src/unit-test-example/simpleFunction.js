@@ -1,4 +1,6 @@
-export const add = (a, b) => a + b;
+export const add = (a, b) => {
+  return a + b
+};
 
 
 export const forEach = (callback, arr) => {
@@ -6,16 +8,6 @@ export const forEach = (callback, arr) => {
     callback(arr[i]);
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 export const calculator = {
   add: function (a, b) {

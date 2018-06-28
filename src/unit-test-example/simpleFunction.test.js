@@ -1,10 +1,12 @@
 import { add, forEach, calculator } from './simpleFunction';
 
-// simple unit test
+// // simple unit test
 describe('add', () => {
   it('should add two numbers together', () => {
-    expect(add(1, 3)).toEqual(4);
+    const result = add(1, 3);
+    expect(result).toEqual(4);
   });
+
   it('should add two negative numbers together', () => {
     expect(add(-2, -4)).toEqual(-6);
   });
@@ -17,12 +19,12 @@ describe('forEach', function () {
   // create spy with an implementation
   const callbackSpy = jest.fn(a => a);
 
-  // run the forEach code before each test assertion block.
+  // // run the forEach code before each test assertion block.
   beforeEach(() => {
     result = forEach(callbackSpy, [1, 2, 3]);
   });
 
-  // // reset the spy after each test
+  // // // reset the spy after each test
   afterEach(() => {
     callbackSpy.mockReset();
   })
@@ -40,6 +42,42 @@ describe('forEach', function () {
     expect(result).toBeUndefined();
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
